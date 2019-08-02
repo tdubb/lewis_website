@@ -1,0 +1,206 @@
+<html>
+  <body>
+    <div class="container">
+      <div class="col-md-3"></div>
+      <div class="col-md-4">
+        <img src="https://lh3.googleusercontent.com/CB76SSsXBHcjPa330UEF3UXRjF60y6X6m8mdMT9FnCuFFKUBemE7Qti7hnmJZc9ddgdtFRkz1GuEEn7EAXX9Z-At40b5AbBp4Y2O48tYOOPlrGRAoQhJ2NmMNUrn3pZq4EHL2UKszA=w2400" height="442" width="642"><span id="jacobson" style="font-size: 55px"></span>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+    <div class="container">
+      <br>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+      <form id="sorting">
+        <h1> The Bark Knight Quiz </h1>
+        <p>
+          <label>Sarah had to wear a ____ collar</label><br>
+          <select id="1">
+            <option value="0">u-neck</option>
+            <option value="0">v-neck</option>
+            <option value="0">none</option>
+            <option value="1">double neck</option>
+          </select>
+        </p>
+
+        <p>
+          <label>In what book does li'l Petey first appear?</label><br>
+          <select id="2">
+            <option value="0">1</option>
+            <option value="1">3</option>
+            <option value="0">5</option>
+            <option value="0">2</option>
+          </select>
+        </p>
+
+        <p>
+          <label>What type of goggles are in "The Bark Knight" costume?</label><br>
+          <select id="3">
+            <option value="0">swimming</option>
+            <option value="0">mad scientist</option>
+            <option value="0">no goggles</option>
+            <option value="0">who nows</option>
+          </select>
+        </p>
+
+        <p>
+          <label>What are the colors of Piggy's scarf?</label><br>
+          <select id="4">
+            <option value="0">blue and green</option>
+            <option value="1">red and yellow/gold</option>
+            <option value="0">purple and brown</option>
+            <option value="0">gold and silver/grey</option>
+          </select>
+        </p>
+
+        <p>
+          <label>How many weener hot dogs are shown in the first book?</label><br>
+          <select id="5">
+            <option value="1">1</option>
+            <option value="0">2</option>
+            <option value="0">3</option>
+            <option value="0">4</option>
+            <option value="0">5</option>
+            <option value="0">6</option>
+          </select>
+        </p>
+
+        <p>
+          <button id="submit">Submit</button>
+          <button id="reset">Reset</button>
+        </p>
+      </form>
+    </div>
+    <div  class="col-md-3" id="quizResult" style="font-size: 50px;"></div>
+    </div>
+    </div>
+    <div class="container">
+    <div  class="col-md-3"></div>
+    <div class="col-md-3">
+      <form id="georgeAndHarold">
+        <h1> George And Harold Quiz </h1>
+        <p>
+          <label>1</label><br>
+          <select id="1a">
+            <option value="0">cool catch phrase</option>
+            <option value="1">say the first funny thing in your mind</option>
+          </select>
+        </p>
+
+        <p>
+          <label>2</label><br>
+          <select id="2a">
+            <option value="0">no pollo's allowed</option>
+            <option value="1">don't underestimate ties!!</option>
+          </select>
+        </p>
+
+        <p>
+          <label>3</label><br>
+          <select id="3a">
+            <option value="1">pajamas</option>
+            <option value="0">t.v.</option>
+          </select>
+        </p>
+
+        <p>
+          <label>4</label><br>
+          <select id="4a">
+            <option value="0">dolphins are cute</option>
+            <option value="1">the world should be rid of evil robots</option>
+          </select>
+        </p>
+
+        <p>
+          <label>5</label><br>
+          <select id="5a">
+            <option value="0">you observe and give comments</option>
+            <option value="1">you get things done like pranks</option>
+          </select>
+        </p>
+
+        <p>
+          <button id="submit2">Submit</button>
+          <button id="reset">Reset</button>
+        </p>
+      </form>
+    </div>
+    <div  class="col-md-3" id="gAndHResult" style="font-size: 50px;"></div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+      const button = document.getElementById("submit");
+      button.addEventListener("click",function(e){
+        e.preventDefault()
+        let values = 0
+        var a = document.getElementById("1")
+        var valueA = a.options[a.selectedIndex].value;
+        values += Number([valueA])
+        var b = document.getElementById("2")
+        var valueB = b.options[b.selectedIndex].value;
+        values += Number([valueB])
+        var c = document.getElementById("3")
+        var valueC = c.options[c.selectedIndex].value;
+        values += Number([valueC])
+        var d = document.getElementById("4")
+        var valueD = d.options[d.selectedIndex].value;
+        values += Number([valueD])
+        var e = document.getElementById("5")
+        var valueE = e.options[e.selectedIndex].value;
+        values += Number([valueE])
+        console.log(values);
+        let results = ["George", "Harold", "pretty good!", "great job", "you must be a fan", "SUPA JOB"]
+        document.getElementById("quizResult").innerHTML = `${results[values]}`
+      })
+
+      const button2 = document.getElementById("submit2");
+      button2.addEventListener("click",function(e){
+        e.preventDefault()
+        let values = 0
+        var a = document.getElementById("1a")
+        var valueA = a.options[a.selectedIndex].value;
+        values += Number([valueA])
+        var b = document.getElementById("2a")
+        var valueB = b.options[b.selectedIndex].value;
+        values += Number([valueB])
+        var c = document.getElementById("3a")
+        var valueC = c.options[c.selectedIndex].value;
+        values += Number([valueC])
+        var d = document.getElementById("4a")
+        var valueD = d.options[d.selectedIndex].value;
+        values += Number([valueD])
+        var e = document.getElementById("5a")
+        var valueE = e.options[e.selectedIndex].value;
+        values += Number([valueE])
+        console.log(values);
+        let result = ["George", "Harold"]
+        if (result > 2) {
+          answer = "Harold"
+        } else {
+          answer = "George"
+        }
+        document.getElementById("gAndHResult").innerHTML = `${answer}`
+      })
+
+
+      const reset = document.getElementById("reset");
+      reset.addEventListener("click",function(e){
+        location.reload();
+      },false);
+    </script>
+  </body>
+</html>
