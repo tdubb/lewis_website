@@ -39,7 +39,7 @@
             <option value="0">swimming</option>
             <option value="0">mad scientist</option>
             <option value="0">no goggles</option>
-            <option value="0">who nows</option>
+            <option value="1">who nows</option>
           </select>
         </p>
 
@@ -163,7 +163,7 @@
         var valueE = e.options[e.selectedIndex].value;
         values += Number([valueE])
         console.log(values);
-        let results = ["George", "Harold", "pretty good!", "great job", "you must be a fan", "SUPA JOB"]
+        let results = ["pretty hard quiz, eh?", "1 down, 4 to go!", "pretty good!", "great job", "you must be a fan", "SUPA JOB"]
         document.getElementById("quizResult").innerHTML = `${results[values]}`
       })
 
@@ -187,8 +187,9 @@
         var valueE = e.options[e.selectedIndex].value;
         values += Number([valueE])
         console.log(values);
-        let result = ["George", "Harold"]
-        if (result > 2) {
+
+        console.log(values)
+        if (values > 2) {
           answer = "Harold"
         } else {
           answer = "George"
